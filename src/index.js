@@ -48,6 +48,28 @@ function getToyData() {
   });
 }
 
+//add new toy function, include a POST request
+  //querySelector add either . or # depending on class or ID
+  //selecting the class form html element
+  const form = document.querySelector(".add-toy-form")
+  form.addEventListener("submit", addNewToy)
+  function addNewToy() {
+    e.preventDefault()
+    console.log(e)
+  // POST http://localhost:3000/toys
+  // headers: 
+  // {
+  //   "Content-Type": "application/json",
+  //   Accept: "application/json"
+  // }
+  
+  // body: JSON.stringify({
+  //   "name": "Jessie",
+  //   "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
+  //   "likes": 0
+  }
+
+
 // function updateLikes(e) {
 //     fetch(`http://localhost:3000/toys/${id}`, {
 //     method: 'PATCH', // or 'PUT'
